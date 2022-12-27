@@ -13,22 +13,6 @@ use  App\Models\User;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/home', function () {
-    //return view('home');
-});
-
-Route::get('/unicode', function () {
-    $user = new User();
-    $allUser = $user::all();
-    dd($allUser);
-});
-
-Route::get('/product', function () {
-    return view('product');
-});
 
 
